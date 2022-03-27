@@ -1,0 +1,188 @@
+.esg-starring	{	line-height:25px;display: inline-block}
+.esg-starring .star-rating{	float: none; }
+
+.esg-starring .star-rating {
+color: #FFC321 !important;
+}
+* cyrillic */
+
+.esg-starring .star-rating, .esg-starring-page .star-rating {
+float: right;
+overflow: hidden;
+position: relative;
+height: 1em;
+line-height: 1em;
+font-size: 1em;
+width: 5.4em;
+font-family: star;
+}
+
+.esg-starring .star-rating:before, .esg-starring-page .star-rating:before {
+content: "\73\73\73\73\73";
+color: #E0DADF;
+float: left;
+top: 0;
+left: 0;
+position: absolute;
+}
+
+.esg-starring star-rating span,
+.esg-starring .star-rating span {
+									overflow: hidden;
+									float: left;
+									top: 0;
+									left: 0;
+									position: absolute;
+									padding-top: 1.5em;
+									}
+
+.esg-starring .star-rating span:before,
+.esg-starring .star-rating span:before {
+content: "\53\53\53\53\53";
+top: 0;
+position: absolute;
+left: 0;
+}
+
+.esg-starring .star-rating {
+color: #FFC321 !important;
+}
+
+.lazyloadcover { position:absolute;top:0px;left:0px;z-index:10;width:100%;height:100%; }
+
+.esg-lazyblur {
+	background-repeat: no-repeat;
+  	filter: blur(25px);
+  	-webkit-filter:blur(25px);
+  	-moz-filter:blur(25px);
+  	background-size:cover;background-position:center center; 
+  	width:100%;
+  	height:100%;
+  	top:0;
+  	left:0;
+  	overflow: hidden; 	
+}
+
+.esg-media-poster {	width:100%;height:100%;position:absolute; top:0px; left:0px; background-size:cover; background-position: center center;z-index:10;opacity:0;}
+.esg-video-active .esg-media-poster {z-index: 0}
+.esg-vimeo-frame {background: black}
+
+/* 2.2 */
+.esg-grid .no-filter-message {
+    /* no need to edit below */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+ 
+}
+ 
+/* fades the message in and out */
+.esg-grid.show-message .no-filter-message {
+ 
+    transition-duration: 1s;
+    visibility: visible;
+    opacity: 1;
+ 
+}
+
+/* 2.1.6 */
+.esg-hover-image {display: none}
+.esg-media-poster .esg-hover-image {display: block; width: inherit; height: inherit; background-size: inherit; background-position: inherit; visibility: hidden; opacity: 0}
+
+.esg-starring .star-rating, .esg-starring-page .star-rating {
+line-height: 1em;
+font-size: 1em;
+font-family: star;
+}
+
+.esg-grid	{	width:100%;max-width:100%; font-family: 'Open Sans', sans-serif; -webkit-backface-visibility: hidden; backface-visibility:hidden; -webkit-transform: translateZ(0px); transform: translateZ(0px)}
+@-moz-document url-prefix() {
+  .esg-grid  { transform: none !important}
+}
+
+.esg-grid .mainul,
+.esg-grid .mainul>li { list-style: none;
+	margin:0;
+	padding:0;
+	transform-style: flat !important;}
+
+
+
+.esg-grid * { -webkit-font-smoothing:antialiased; font-smoothing: antialiased;}
+
+/* 2.2.5 */
+.esg-grid ul,
+.esg-grid li {
+	list-style: none;
+	margin:0;
+	padding:0;
+	transform-style: flat !important;
+
+}
+
+.esg-overflowtrick	{	position: relative; width:100%; height:auto;
+						overflow:hidden;
+						padding:0px; box-sizing:border-box;
+						-moz-box-sizing:border-box;
+						-webkit-box-sizing:border-box;
+
+						z-index:1;
+						/*background:#00ff00;*/
+					}
+
+.esg-container	{
+		position:relative;
+		width:100%;
+		height:auto;
+
+}
+
+.esg-container >ul,
+.esg-overflowtrick >ul {
+	width:100%;
+	max-width:100%;
+	height:0px;
+/*	display:none;*/
+	position: relative;
+	overflow: visible;
+/*	background:#ff0000;
+	padding:30px;
+	margin:-30px;*/
+}
+
+.esg-grid li {
+		 border: 0px solid transparent;
+         outline: 0px solid transparent;
+         visibility: hidden;
+         display: none;
+	/*	 -moz-backface-visibility: hidden;*/
+
+}
+
+.esg-grid a { border:none; text-decoration: none}
+.esg-grid a:hover,
+.esg-grid a:focus { text-decoration: none; border:none; }
+.esg-clear				{	clear:both; height:5px !important; background: none !important; }
+.esg-clear-no-height,
+.eg-clearfix			{	clear:both; height:0px !important; background: none !important; }
+
+
+.esg-divide-5	{	width:100%;height:5px}
+.esg-divide-15	{	width:100%;height:15px}
+.esg-divide-20	{	width:100%;height:20px}
+.esg-divide-22	{	width:100%;height:22px}
+.esg-divide-30	{	width:100%;height:30px}
+
+.esg-click-to-play-video	{	cursor: pointer}
+
+.esg-entry-media iframe		{	-webkit-transform-style: flat;
+								-webkit-transform: translateZ(1000px);
+								border: 0;
+							}
+
